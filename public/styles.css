@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #note-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #note-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #e2e2e2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
