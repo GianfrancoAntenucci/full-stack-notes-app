@@ -1,51 +1,114 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 30px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  #note-form {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  #note-input {
-    flex: 1;
-    padding: 10px;
-    font-size: 1em;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    background: #e2e2e2;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Center the container with a modern card style */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0058bc;
+}
+
+/* Form styling */
+#note-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#note-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+#note-input:focus {
+  outline: none;
+  border-color: #2a9d8f;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  background: #00ae9a;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #21867a;
+}
+
+/* List styling for notes */
+ul {
+  list-style: none;
+}
+
+li {
+  background: #e9f5f2;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cfe8e4;
+}
+
+li span {
+  flex: 1;
+}
+
+/* Buttons inside each note */
+li button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:first-of-type {
+  background: #ffb703;
+  color: #fff;
+}
+
+li button:first-of-type:hover {
+  background: #ffa500;
+}
+
+li button:last-of-type {
+  background: #e76f51;
+  color: #fff;
+}
+
+li button:last-of-type:hover {
+  background: #d35400;
+}
