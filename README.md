@@ -13,7 +13,7 @@ A simple note-taking application built with Node.js, Express, and a modern front
 3. Run `node server.js` to start the server.
 
 ## Deployment
-Deployed on Render: [Your Deployed App URL](https://your-app-url.onrender.com)
+Deployed App URL: https://full-stack-notes-app-yamg.onrender.com/
 
 ## GitHub Repository
 GitHub Repo URL: https://github.com/GianfrancoAntenucci/full-stack-notes-app/tree/main
